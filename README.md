@@ -1,13 +1,14 @@
-# 8-Puzzle Solver
+# 8-Puzzle Solver using A* Algorithm
 
-This C++ program solves the 8-puzzle problem. The 8-puzzle is a classic sliding puzzle where the goal is to rearrange a 3x3 grid of numbered tiles to reach a specified configuration.
+This C++ program implements a solver for the classic 8-puzzle problem using the A* algorithm. The 8-puzzle is a sliding puzzle where the objective is to rearrange a 3x3 grid of numbered tiles to achieve a specific configuration.
 
-For more information about the sliding puzzle, you can visit the [Wikipedia page](https://en.wikipedia.org/wiki/Sliding_puzzle).
+For more information about the sliding puzzle, you can visit [here](https://en.wikipedia.org/wiki/Sliding_puzzle).
 
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
+- [A* Algorithm Overview](#a-algorithm-overview)
 - [Working of the Code](#working-of-the-code)
 
 ## Prerequisites
@@ -37,6 +38,22 @@ For more information about the sliding puzzle, you can visit the [Wikipedia page
 3. **View Solution:**
 
     The program will display the sequence of moves needed to solve the puzzle.
+
+## A* Algorithm Overview
+
+The A* algorithm is a widely used search algorithm employed in pathfinding and graph traversal. It aims to find the shortest path from a start state to a goal state by efficiently exploring the search space. Key aspects of the A* algorithm in this implementation include:
+
+- **Priority Queue:**
+  - Utilizes a priority queue to manage states based on their estimated costs.
+
+- **Heuristic Function: Manhattan Distance**
+  - Employs the Manhattan distance heuristic to estimate the cost from the current state to the goal state.
+
+- **State Comparison:**
+  - States are compared based on their heuristic values, prioritizing states with lower total costs.
+
+- **Optimal Path Finding:**
+  - Iteratively explores states in a prioritized manner, ensuring an optimal path is found.
 
 ## Working of the Code
 
